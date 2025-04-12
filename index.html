@@ -3,24 +3,35 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>SockMatch AI - Intelligent Sock Recommendations</title>
+  <title>SockMatch AI</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #f8f9fa;
-      color: #333;
-      padding: 2rem;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #222;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    main {
       max-width: 800px;
-      margin: auto;
+      margin: 40px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
     h1 {
-      color: #000;
+      margin-top: 0;
     }
-    .box {
-      background: #fff;
-      padding: 1.5rem;
-      border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    footer {
+      text-align: center;
+      color: #888;
+      padding: 20px;
     }
     a {
       color: #0070f3;
@@ -29,35 +40,58 @@
     a:hover {
       text-decoration: underline;
     }
-    footer {
-      margin-top: 2rem;
-      font-size: 0.9rem;
-      color: #777;
+    .upload-section {
+      margin-top: 30px;
+      padding: 20px;
+      background: #fafafa;
+      border: 2px dashed #ccc;
+      text-align: center;
+      border-radius: 8px;
+    }
+    .upload-section input[type="file"] {
+      margin-top: 10px;
+    }
+    .coming-soon {
+      margin-top: 20px;
+      background-color: #999;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: not-allowed;
     }
   </style>
 </head>
 <body>
-  <div class="box">
+  <header>
     <h1>SockMatch AI</h1>
-    <p><strong>SockMatch AI</strong> is an intelligent fashion assistant that helps sneaker lovers find the perfect socks to match their sneakers. It analyzes the sneaker’s design, color, and height from uploaded images or text input, and then recommends stylish, season-appropriate socks.</p>
+    <p>Your personal sock recommendation engine</p>
+  </header>
 
-    <h2>How It Works</h2>
+  <main>
+    <h2>What is SockMatch?</h2>
+    <p>SockMatch AI suggests the best socks to pair with your sneakers using AI-driven matching rules.</p>
+
+    <h2>How it works</h2>
     <ul>
-      <li>Users upload a sneaker image or enter sneaker name & colorway</li>
-      <li>The AI extracts design elements and color patterns</li>
-      <li>Based on matching logic and rules, it recommends socks by type, color, pattern, and material</li>
-      <li>It then shows affiliate links for users to shop directly from Amazon</li>
+      <li>Upload a shoe image or enter a sneaker model</li>
+      <li>We analyze colors, design, height, and season</li>
+      <li>Get matching sock recommendations</li>
     </ul>
 
-    <h2>Why Amazon</h2>
-    <p>We plan to use the Amazon Product Advertising API to fetch real-time listings of socks that match the AI’s recommendation. This gives users immediate purchase options while we earn affiliate commissions through the Amazon Associates program.</p>
+    <div class="upload-section">
+      <h3>Try it out</h3>
+      <p>Select your sneaker image:</p>
+      <input type="file" accept="image/*" disabled />
+      <button class="coming-soon" disabled>Find Matches (Coming Soon)</button>
+    </div>
 
-    <h2>Current Status</h2>
-    <p>The tool is currently under development and will be deployed soon as a web-based platform. This page serves as a preview of our purpose and implementation plan for API access.</p>
+    <h2>Amazon Integration</h2>
+    <p>Soon you’ll be able to browse matching socks directly from Amazon with one click.</p>
 
-    <h2>Contact</h2>
-    <p>If you'd like to learn more or test the tool once it's live, please reach out at <a href="mailto:support@sockmatch.ai">support@sockmatch.ai</a>.</p>
-  </div>
+    <p><a href="https://github.com/yourusername/your-repo">View project on GitHub</a></p>
+  </main>
 
   <footer>
     &copy; 2025 SockMatch AI. All rights reserved.
